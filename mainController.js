@@ -105,7 +105,7 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
       axis: "y",
       dataset: "dataset0",
       key: "val_0",
-      label: "An area series",
+      label: "lable",
       color: "#1f77b4",
       type: ['dot','line'],
       id: 'mySeries0'
@@ -116,7 +116,8 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
         min: 0.5,
         max: 7.5,
         tickFormat: function(value, index) {
-          return "3/" + (10 - index);
+          if (index < 3) return ((8 + 2*index)+" pm");
+          else return ((index - 2)*2+" am");
         }
       },
       y: {
