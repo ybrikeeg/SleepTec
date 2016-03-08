@@ -60,7 +60,7 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
         min: 0.5,
         max: 7.5,
         tickFormat: function(value, index) {
-          return "Date : " + value + " " + index;
+          return "3/" + (10 - index);
         }
       },
       y: {
