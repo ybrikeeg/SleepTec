@@ -1,34 +1,40 @@
 <!doctype html>
 <html ng-app="sleepTec" ng-controller="MainController">
-  <head>
-    <title>SleepTec</title>
-    <script src="node_modules/angular/angular.js"></script>
-    <script src="mainController.js"></script>
 
-    <script src="components/states/statesController.js"></script>
-    <link rel="stylesheet" type="text/css" href="components/states/states.css" />
+<head>
+  <title>SleepTec</title>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="mainController.js"></script>
 
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="node_modules/d3/d3.min.js"></script>
-    <!-- Reference n3-line-chart -->
-    <script src="node_modules/n3-charts/build/LineChart.js"></script>
-    <link rel="stylesheet" href="node_modules/n3-charts/build/LineChart.css">
-    <link rel="stylesheet" href="main.css">
+  <script src="components/states/statesController.js"></script>
+  <link rel="stylesheet" type="text/css" href="components/states/states.css" />
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/d3/d3.min.js"></script>
+  <!-- Reference n3-line-chart -->
+  <script src="node_modules/n3-charts/build/LineChart.js"></script>
+  <link rel="stylesheet" href="node_modules/n3-charts/build/LineChart.css">
+  <link rel="stylesheet" href="main.css">
 
 
-  </head>
-  <body>
-  <linechart data="data" options="options"></linechart>
+</head>
 
-  <div class = "notify">
-    <img class = "warning" src = "img/warning.png">
-    <p class = "warningtext">
-      ayo hol up you need more sleep homie
-    </p>
-  <div>
-
-  <div class = "prompt">
-    Sleep an extra 500 hours to catch up
+<body>
+  <div class="data-container">
+    <linechart data="data" options="options"></linechart>
   </div>
-  </body>
+
+  <div class="message-containter">
+    <div class="notify">
+      <p class="warningtext">You have accumulated 14 hours of sleep debt over the past week.</p>
+    </div>
+
+    <div class="prompt">
+      <img class="warning" src="img/warning.png">
+      <p class="actionable-text">Sleep an extra 2 hour for the next 7 days to catch up</p>
+    </div>
+  </div>
+
+</body>
+
 </html>
