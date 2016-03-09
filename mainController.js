@@ -105,10 +105,7 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
       axis: "y",
       dataset: "dataset0",
       key: "val_0",
-<<<<<<< HEAD
-=======
       label: "Hours slept",
->>>>>>> a39afc0895c8cdd100448acfb874db77e5f65d14
       color: "#1f77b4",
       type: ['dot','line'],
       id: 'mySeries0'
