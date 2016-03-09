@@ -19,25 +19,25 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
       val_0: 0
     }, {
       x: 1,
-      val_0: 0.993
+      val_0: 1
     }, {
       x: 2,
-      val_0: 1.947
+      val_0: 2
     }, {
       x: 3,
-      val_0: 2.823
+      val_0: -3
     }, {
       x: 4,
-      val_0: 3.587
+      val_0: -1
     }, {
       x: 5,
-      val_0: -4.207
+      val_0: 2
     }, {
       x: 6,
-      val_0: 4.66
+      val_0: -1
     }, {
       x: 7,
-      val_0: 4.927
+      val_0: 4
     }, {
       x: 8,
       val_0: 0
@@ -50,25 +50,25 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
       val_0: 0
     }, {
       x: 1,
-      val_0: 0.993
+      val_0: 1
     }, {
       x: 2,
-      val_0: 1.947
+      val_0: 2
     }, {
       x: 3,
-      val_0: 2.823
+      val_0: -3
     }, {
       x: 4,
-      val_0: 3.587
+      val_0: -1
     }, {
       x: 5,
-      val_0: -4.207
+      val_0: 2
     }, {
       x: 6,
-      val_0: 4.66
+      val_0: -1
     }, {
       x: 7,
-      val_0: 4.927
+      val_0: 4
     }, {
       x: 8,
       val_0: 0
@@ -80,7 +80,7 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
       axis: "y",
       dataset: "dataset0",
       key: "val_0",
-      label: "An area series",
+      label: "Hours slept relative to daily sleep goal:",
       color: "#1f77b4",
       type: ['column'],
       id: 'mySeries0'
@@ -105,7 +105,10 @@ sleepTecApp.controller('MainController', ['$scope', function($scope) {
       axis: "y",
       dataset: "dataset0",
       key: "val_0",
-      label: "lable",
+<<<<<<< HEAD
+=======
+      label: "Hours slept",
+>>>>>>> a39afc0895c8cdd100448acfb874db77e5f65d14
       color: "#1f77b4",
       type: ['dot','line'],
       id: 'mySeries0'

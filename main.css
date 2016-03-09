@@ -1,15 +1,30 @@
 .notify{
-	text-align: center;
+	/*text-align: center;*/
 	font-weight: bold;
 	font-size: 42px;
 }
-
+.data-container{
+	margin-top: 30px;
+	width:100%;
+	height: 400px;
+}
 .warning{
 	float: left;
 	margin: 10px;
 	height: 11%;
 	width: 11%;
+	margin-top: 0px;
+	/*align: middle;*/
+}
+.warningtext{
+	padding-left: 132px;
+
 }
 
-.warningtext{
+.actionable-text{
+	/*text-align: center;*/
+	font-weight: bold;
+	font-size: 42px;
+	margin-top: 0px;
+  padding-top: 25px;
 }
